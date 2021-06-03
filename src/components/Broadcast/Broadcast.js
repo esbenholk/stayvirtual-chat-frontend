@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import axios from "react-axios";
 
-export default function Broadcast(props) {
+export default function Broadcast() {
   const button = useRef();
   const video = useRef();
 

@@ -7,8 +7,6 @@ import "./App.css";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import { useProgress, Html } from "@react-three/drei";
-
 import Broadcast from "./components/Broadcast/Broadcast.js";
 
 import io from "socket.io-client";
