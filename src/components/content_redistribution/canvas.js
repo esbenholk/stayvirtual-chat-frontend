@@ -215,7 +215,7 @@ function Sound({ url }) {
     sound.current.play();
     camera.add(listener);
     return () => camera.remove(listener);
-  }, []);
+  });
   return <positionalAudio ref={sound} args={[listener]} />;
 }
 
