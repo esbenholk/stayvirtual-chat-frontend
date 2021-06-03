@@ -1,0 +1,24 @@
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  justify-content: space-between;
+}
+
+.users-headline {
+  border-bottom: 2px solid var(--mainColor);
+  border-top: 2px solid var(--mainColor);
+}
+
+.activeItem {
+  display: flex;
+  align-items: center;
+}
+
+.activeItem img {
+  padding-left: 10px;
+}
+
+.activeItem p {
+  color: var(--newColor);
+}

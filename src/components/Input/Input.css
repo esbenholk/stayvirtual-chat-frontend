@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  border: 2px solid var(--mainColor);
+  display: flex;
+}
+
+.input {
+  border: none;
+  min-width: 150px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  /* border-bottom: 2px var(--mainColor) solid; */
+  border-radius: 0;
+  padding: 10px;
+  font-size: 15px;
+  flex-grow: 5;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--mainColor);
+  font-family: "sinistre";
+  padding: 5px;
+  display: inline-block;
+  border: none;
+  width: auto;
+}
