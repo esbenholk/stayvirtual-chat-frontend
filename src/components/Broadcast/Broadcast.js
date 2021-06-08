@@ -34,7 +34,9 @@ export default function Broadcast() {
   }
 
   function endStream() {
-    axios.post("/api/endbroadcast");
+    axios.post(
+      "https://stayvirtual-chat-backend.herokuapp.com//api/endbroadcast"
+    );
   }
 
   async function handleNegotiationNeededEvent(peer) {
@@ -44,7 +46,10 @@ export default function Broadcast() {
       sdp: peer.localDescription,
     };
 
-    const { data } = await axios.post("/api/broadcast", payload);
+    const { data } = await axios.post(
+      "https://stayvirtual-chat-backend.herokuapp.com//api/broadcast",
+      payload
+    );
 
     const desc = new RTCSessionDescription(data.sdp);
     peer
