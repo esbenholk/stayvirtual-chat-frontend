@@ -35,7 +35,7 @@ export default function Broadcast() {
 
   function endStream() {
     axios.post(
-      "https://stayvirtual-chat-backend.herokuapp.com//api/endbroadcast"
+      "https://stayvirtual-chat-backend.herokuapp.com/api/endbroadcast"
     );
   }
 
@@ -47,7 +47,7 @@ export default function Broadcast() {
     };
 
     const { data } = await axios.post(
-      "https://stayvirtual-chat-backend.herokuapp.com//api/broadcast",
+      "https://stayvirtual-chat-backend.herokuapp.com/api/broadcast",
       payload
     );
 
