@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import axios from "react-axios";
+import axios from "axios";
 
 export default function Broadcast() {
   const button = useRef();
