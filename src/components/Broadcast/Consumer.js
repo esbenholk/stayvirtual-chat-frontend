@@ -35,7 +35,10 @@ export default function Stream(props) {
         sdp: peer.localDescription,
       };
 
-      const { data } = await axios.post("/api/consumer", payload);
+      const { data } = await axios.post(
+        "https://stayvirtual-chat-backend.herokuapp.com/api/consumer",
+        payload
+      );
       const desc = new RTCSessionDescription(data.sdp);
       peer.setRemoteDescription(desc).catch((e) => console.log(e));
       setShowVideo(true);
